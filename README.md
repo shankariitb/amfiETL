@@ -96,9 +96,10 @@ CREATE TABLE `type_table`(
 );
 
 The initial insert time is as follows with 10 connectors. This could be further optimized if we are working with enterprise-level network throughputs and processing powers as we can clearly see the sys time is very less.
-real  3m41.195s
-user  1m54.352s
-sys 0m2.228s
+real	29m35.672s
+user	16m0.155s
+sys	0m15.941s
+
 
 funds names, type names, scheme names are indexed and the corresponding ids are also indexed for faster querying. Dates were indexed.
 
