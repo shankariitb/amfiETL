@@ -43,7 +43,9 @@ And each scheme is store is the nav_records table with the remaining appropriate
 In the above modeling. Type could have been further divided into sub-type based on values present in brackets. Was not sure whether to do or not and didn't stress on it enough because of time constraints.
 Also the model is storing scheme name only once and not checking again in the future if scheme name gets checked in future. Should update in future. That's why maintained this field as text and new names would be appended at the end with comma separator but this feature is currently not implemented.
 
+Also some groups seems to be stopping in middle and we are not sure of all available groups. And the url format for day seems to straight forward and there is no rate limit on the website. `So adopted downloading daily records and uploading model by this even if we face any errors we either upload full days data or not upload. We can later review errors for sepcific day and fix them later. Downloaded and processed each days data concurrently to improve performance.
 
+Data start date 1 apr 2006 is found through observingg dump for specific funds and later exploring some startdates.
 
 
 Schema for all 3 tables can be found below.
